@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'formas';
+    src: url(../fontes/e_commerce/E-commerce.ttf)
+    format('opentype')
+}
+
+/*
+#533DF5
+#3285FA
+*/
+
+*{
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #533DF5;
+}
+
+form {
+    background-color: #3285FA;
+    /* Centraliza o formulário na página*/
+    margin: 10% auto;
+    width: 400px;
+    height: 250px;
+    /*Contorno do formulário*/
+    padding: 32px;
+    position: relative;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.479);
+}
+
+form h1 {
+    font-family: 'formas';
+    font-size: 8em;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    top: -83px;
+    left: 180px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 32px;
+}
+
+input#nome {
+    border: none;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 136px;
+    left: 130px;
+}
+
+input#senha {
+    border: none;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 186px;
+    left: 130px;
+}
+
+
+button {
+    border: none;
+    background-color: white;
+    width: 196px;
+    padding: 10px;
+    position: absolute;
+    top: 236px;
+    left: 130px;
+}
+
+strong {
+    font-size: 15px;
+}
