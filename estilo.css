@@ -9,30 +9,30 @@ body {
     background-color: rgb(10, 237, 245)
 }
 
-div#espaço {
+main {
     background-color: white;
     width: 800px;
     /*height: 1000px;*/
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
 }
 
-div#espaço h1 {
+main h1 {
     text-align: center;
 }
 
-div#espaço img {
+main img {
     display: inline-block;
     padding: 30px 30px 0px 30px;
 }
 
-div#espaço p#apresentação {
+main p#apresentação {
     display: inline-block;
     position: absolute;
-    top: 16%;
+    top: 5%;
     left: 40%;
     font-weight: bolder;
     font-size: 30px;
@@ -57,34 +57,56 @@ div#sobre p#well {
     padding: 0px 20px 0px 20px; 
 }
 
-
-
-
-
 :root{
     --counter: 0;
+    --corHTML: #E54C21;
+    --corCSS: #396DC0;
+    --corJAVASCRIPT: #F7E018;
 }
 
-div.primeira-barra {
+
+
+
+
+
+/*ESTILO DA HABILIDADE HTML*/
+/*===========================================================================================================================*/
+section#dohtml {
+    background-color: rgba(229, 75, 33, 0.397);
+    width: 180px;
+    height: 150px;
+    margin-left: 70px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
+    margin-top: 50px;
+}
+
+section#dohtml p {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+}
+
+
+div#primeira-barra-html {
     width: 160px;
     height: 15px;
-    border: solid 1px black;
-    border-radius: 10px;
-    margin-left: 110px;
+    border: solid 2px white;
+    margin: 50px 0px 10px 10px;
 }
 
-div.segunda-barra {
+div#segunda-barra-html {
+    width: 50%;
     height: 100%;
-    width: 75%;
-    background-color: #E54C21;
+    background-color: var(--corHTML);
     border-radius: inherit;
     animation-name: barra;
     animation-duration: 2s;
-    animation-iteration-count: calc(1);
-    /*animation-delay: 1s;*/
 }
 
-div.segunda-barra::after{
+div#segunda-barra-html::after{
     content: var(--counter);
     font-size: 16px;
     display: block;
@@ -109,15 +131,131 @@ div.segunda-barra::after{
         --counter: "50%"
     }
 
-    75%{
-        width: 75%;
-        --counter: "75%"
-    }
-
-    /*
-    100%{
-        width: 100%;
-        --counter: "100%"
-    }
-    */
 }
+/*===========================================================================================================================*/
+
+
+
+
+
+/*ESTILO DA HABILIDADE CSS*/
+/*===========================================================================================================================*/
+section#docss {
+    background-color: rgba(57, 109, 192, 0.397);
+    width: 180px;
+    height: 150px;
+    margin: 20px 0px 0px 70px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
+}
+
+section#docss p {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+}
+
+div#primeira-barra-css {
+    width: 160px;
+    height: 15px;
+    border: solid 2px white;
+    margin: 50px 0px 10px 10px;
+}
+
+div#segunda-barra-css {
+    width: 50%;
+    height: 100%;
+    background-color: var(--corCSS);
+    border-radius: inherit;
+    animation-name: barracss;
+    animation-duration: 2s;
+}
+
+div#segunda-barra-css::after {
+    content: var(--counter);
+    font-size: 16px;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+@keyframes barracss {
+    0% {
+        width: 0;
+        --counter: "0%";
+    }
+    25% {
+        width: 25%;
+        --counter: "25%";
+    }
+    50% {
+        width: 50%;
+        --counter: "50%";
+    }
+}
+/*===========================================================================================================================*/
+
+
+
+
+
+/*ESTILO DA HABILIDADE JAVASCRIPT*/
+/*===========================================================================================================================*/
+section#dojs {
+    background-color: rgba(247, 225, 24, 0.397);
+    width: 180px;
+    height: 150px;
+    margin: 20px 0px 0px 70px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
+}
+
+section#dojs p {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+}
+
+div#primeira-barra-js {
+    width: 160px;
+    height: 15px;
+    border: solid 2px white;
+    margin: 50px 0px 10px 10px;
+}
+
+div#segunda-barra-js {
+    width: 50%;
+    height: 100%;
+    background-color: var(--corJAVASCRIPT);
+    border-radius: inherit;
+    animation-name: barrajs;
+    animation-duration: 2s;
+}
+
+div#segunda-barra-js::after {
+    content: var(--counter);
+    font-size: 16px;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+@keyframes barrajs {
+    0%{
+        width: 0%;
+        --counter: "0%"
+    }
+    25%{
+        width: 25%;
+        --counter: "25%"
+    }
+    50%{
+        width: 50%;
+        --counter: "50%"
+    }
+}
+/*===========================================================================================================================*/
