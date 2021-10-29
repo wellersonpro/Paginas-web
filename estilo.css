@@ -21,7 +21,7 @@ body {
 
 nav ul {
     list-style: none;
-    margin: 20px 0px 100px -25px;
+    margin: 15px 0px 100px -25px;
 }
 
 nav ul li {
@@ -30,20 +30,23 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bolder;
     color: black;
-    padding: 8px;
+    padding: 19px 20px 20px 20px;
+    transition-duration: .2s;
 }
 
 nav ul li a:hover {
     background-color: var(--cordefundo);
     color: white;
-    border-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.349);
 }
 main {
     background-color: white;
-    width: 800px;
+    width: 1000px;
     position: absolute;
     top: 5%;
     left: 50%;
@@ -104,10 +107,10 @@ h1#habilidade {
 /*HTML*/
 section#dohtml {
     background-color: rgba(229, 75, 33, 0.397);
-    width: 180px;
-    height: 150px;
+    width: 200px;
+    height: 180px;
     padding: 10px;
-    margin: 50px 0px 50px 65px;
+    margin: 50px 0px 50px 82.75px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     margin-top: 50px;
@@ -131,12 +134,12 @@ div#primeira-barra-html {
 }
 
 div#segunda-barra-html {
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: var(--corHTML);
     border-radius: inherit;
-    animation-name: barra;
-    animation-duration: 2s;
+    animation-name: barrahtml;
+    animation-duration: 3s;
 }
 
 div#segunda-barra-html::after{
@@ -147,21 +150,32 @@ div#segunda-barra-html::after{
     text-align: center;
 }
 
-@keyframes barra {
+@keyframes barrahtml {
 
     0%{
         width: 0;
         --counter: "0%";
     }
 
-    25%{
-        width: 25%;
-        --counter: "25%";
+    10%{
+        --counter: "10%";
     }
 
+    20%{
+        --counter: "20%"
+    }
+    30%{
+        --counter: "30%"
+    }
+    40%{
+        --counter: "40%"
+    }
     50%{
-        width: 50%;
         --counter: "50%"
+    }
+    60%{
+        width: 60%;
+        --counter: "60%"
     }
 
 }
@@ -171,10 +185,10 @@ div#segunda-barra-html::after{
 /*CSS*/
 section#docss {
     background-color: rgba(57, 109, 192, 0.397);
-    width: 180px;
-    height: 150px;
+    width: 200px;
+    height: 180px;
     padding: 10px;
-    margin: 50px 0px 50px 30px;
+    margin: 50px 0px 50px 82.75px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     display: inline-block;
@@ -196,12 +210,12 @@ div#primeira-barra-css {
 }
 
 div#segunda-barra-css {
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: var(--corCSS);
     border-radius: inherit;
     animation-name: barracss;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 div#segunda-barra-css::after {
@@ -213,17 +227,30 @@ div#segunda-barra-css::after {
 }
 
 @keyframes barracss {
-    0% {
+    0%{
         width: 0;
         --counter: "0%";
     }
-    25% {
-        width: 25%;
-        --counter: "25%";
+
+    10%{
+        --counter: "10%";
     }
-    50% {
-        width: 50%;
-        --counter: "50%";
+
+    20%{
+        --counter: "20%"
+    }
+    30%{
+        --counter: "30%"
+    }
+    40%{
+        --counter: "40%"
+    }
+    50%{
+        --counter: "50%"
+    }
+    60%{
+        width: 60%;
+        --counter: "60%"
     }
 }
 
@@ -232,10 +259,10 @@ div#segunda-barra-css::after {
 /*JAVASCRIPT*/
 section#dojs {
     background-color: rgba(247, 225, 24, 0.397);
-    width: 180px;
-    height: 150px;
+    width: 200px;
+    height: 180px;
     padding: 10px;
-    margin: 50px 0px 50px 30px;
+    margin: 50px 0px 50px 82.75px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     display: inline-block;
@@ -257,12 +284,12 @@ div#primeira-barra-js {
 }
 
 div#segunda-barra-js {
-    width: 50%;
+    width: 30%;
     height: 100%;
     background-color: var(--corJAVASCRIPT);
     border-radius: inherit;
     animation-name: barrajs;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 div#segunda-barra-js::after {
@@ -278,13 +305,36 @@ div#segunda-barra-js::after {
         width: 0%;
         --counter: "0%"
     }
-    25%{
-        width: 25%;
-        --counter: "25%"
+    10%{
+        --counter: "10%"
     }
-    50%{
-        width: 50%;
-        --counter: "50%"
+    20%{
+        --counter: "20%"
     }
+    30%{
+        width: 30%;
+        --counter: "30%"
+    }
+}
+/*===========================================================================================================================*/
+
+
+
+
+
+/*ESTILO DA PÁGINA PROJETOS*/
+/*===========================================================================================================================*/
+section#projeto01 {
+    display: inline-block;
+    background-color: var(--cordefundo);
+    width: 400px;
+    height: 350px;
+}
+
+section#projeto02 {
+    display: inline-block;
+    background-color: var(--cordefundo);
+    width: 400px;
+    height: 350px;
 }
 /*===========================================================================================================================*/
