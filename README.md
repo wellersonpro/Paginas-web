@@ -1,2 +1,2 @@
 # Projetos-web.
-Projetos web em **HTML** **CSS**.
+Projetos web em **HTML** **CSS** e **JAVASCRIPT**.
