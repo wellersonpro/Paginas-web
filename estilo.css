@@ -330,14 +330,12 @@ h1#tituloprojeto {
 }
 section#projeto01 {
     display: inline-block;
-    background-color: var(--cordefundo);
     border-radius: 7px;
     width: 300px;
     height: 187px;
-    margin: 50px 48.75px;
+    margin: 50px 15px;
 }
 section#projeto01 img {
-    margin: 0px 0px 0px 0px;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
 }
@@ -365,22 +363,35 @@ section#projeto01 a {
 section#projeto02 a {
     text-decoration: none;
 }
+section#projeto03 a {
+    text-decoration: none;
+}
 
 section input:hover {
     background-color: var(--cordobotao);
-    opacity: 70%;
+    opacity: 60%;
 }
 
 section#projeto02 {
     display: inline-block;
-    background-color: var(--cordefundo);
     border-radius: 7px;
     width: 300px;
     height: 187px;
-    margin: 50px 48.75px;
+    margin: 50px 15px;
 }
 section#projeto02 img {
-    margin: 0px 0px 0px 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+section#projeto03 {
+    display: inline-block;
+    border-radius: 7px;
+    width: 300px;
+    height: 178px;
+    margin: 50px 15px;
+}
+section#projeto03 img {
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
 }
