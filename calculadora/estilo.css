@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 @media screen and (max-width: 768px) {
     body {
         padding-top: 30px;
@@ -25,53 +26,55 @@ main {
     max-width: 600px;
     min-width: 280px;
     margin: auto;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.212);
 }
 input{
-    font: bold 16px Arial, Helvetica, sans-serif;
-    width: 80px;
+    font: bold 18px Arial, Helvetica, sans-serif;
+    width: 90px;
     border-radius: 7px;
-    padding: 5px;
+    padding: 8px;
     border-style: none;
 }
 
 h1{
-    font-size: 32px;;
+    font-size: 32px;
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.212);
 }
 
-div#d01{
+p {
+    font-size: 22px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+
+section#d01{
     background: var(--cordefundo);
     width: 100%;
-    height: 200px;
+    height: 190px;
     text-align: center;
     color: white;
-    border-top-left-radius: 50px;
     padding-top: 1px;
 }
 
-div#d02{
+section#d02{
     background: var(--cordefundo);
     width: 100%;
-    height: 200px;
+    height: 190px;
     text-align: center;
     color: white;
 }
 
-div#d03{
+section#d03{
     background: var(--cordefundo);
     width: 100%;
-    height: 200px;
+    height: 190px;
     text-align: center;
     color: white;
 }
 
-div#d04{
+section#d04{
     background: var(--cordefundo);
     width: 100%;
-    height: 200px;
+    height: 170px;
     text-align: center;
     color: white;
-    border-bottom-right-radius: 50px;
 }
