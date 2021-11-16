@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 999px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    ul.nav-list {
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 30vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul.nav-list li {
+        margin-left: 0;
+    }
+
+    div.mobile-menu {
+        display: block;
+    }
+}
+
+ul.nav-list.active {
+    transform: translate(0);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+a.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    background: #23232e;
+    height: 8vh;
+}
+
+main {
+    background: url("imagem/sean-stone-dkb3wApu5XQ-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+ul.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+ul.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+div.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+div.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
