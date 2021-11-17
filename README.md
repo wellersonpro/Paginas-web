@@ -1,2 +1,2 @@
 # Páginas-web.
-Projetos web em **HTML** **CSS** e **JAVASCRIPT**.
+Páginas web em **HTML** **CSS** e **JAVASCRIPT**.
