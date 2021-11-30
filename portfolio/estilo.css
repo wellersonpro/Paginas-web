@@ -59,3 +59,28 @@ main section#sobre p {
     text-align: center;
     color: white;
 }
+
+
+
+
+
+section#jobs {
+    background-color: skyblue;
+    width: 1000px;
+}
+
+section#jobs img#tela {
+    display: inline-block;
+    position: absolute;
+    top: 103%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+}
+
+section#jobs img#calculadora {
+    display: inline-block;
+    position: absolute;
+    top: 103%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+}
