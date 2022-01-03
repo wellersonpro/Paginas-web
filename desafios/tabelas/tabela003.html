@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio014 - Parte 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 50px auto;
+        }
+
+        th {
+            background-color: grey;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .materia {
+            text-align: left;
+        }
+
+        .media {
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tipos {
+            font-weight: bold;
+            background-color: white;
+            color: black;
+        }
+
+        article {
+            text-align: center;
+        }
+        
+        article a.bloco {
+            display: block;
+            text-decoration: none;
+            font-weight: bolder;
+            margin-bottom: 8px;
+        }
+
+        article a {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+    </style>
+    
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+
+            <tr>
+               <th scope="col">Nota 1</th>
+               <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="tipos">Exatas</th>
+                <td class="materia">Matemática</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>9.5</td>
+            </tr>
+
+            <tr>
+                <td class="materia">Física</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>8.7</td>
+            </tr>
+
+            <tr>
+                <td class="materia">Química</td>
+                <td>10.0</td>
+                <td>9.4</td>
+                <td>9.7</td>
+            </tr>
+
+            <tr>
+                <td class="materia">Biologia</td>
+                <td>10.0</td>
+                <td>8.0</td>
+                <td>9.0</td>
+            </tr>
+
+            <tr>
+                <th scope="row" colspan="4" class="materia" >Média de Exatas</th>
+                <td class="media">9.2</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="2" class="tipos">Humanas</th>
+                <td class="materia">História</td>
+                <td>8.5</td>
+                <td>7.5</td>
+                <td>8.0</td>
+            </tr>
+
+            <tr>
+                <td class="materia">Geografia</td>
+                <td>8.0</td>
+                <td>10.0</td>
+                <td>9.0</td>
+            </tr>
+
+            <tr>
+                <th scope="row" colspan="4" class="materia" >Média de Humanas</th>
+                <td class="media">8.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <article>
+        <a class="bloco" href="tabela001.html">tabela 1</a>
+        <a class="bloco" href="tabela002.html">tabela 2</a>
+        <p>Tabelas do desafio 013 do <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a>.</p>
+    </article>
+</body>
+</html>
