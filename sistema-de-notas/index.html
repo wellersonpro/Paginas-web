@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,54 @@
     <link rel="stylesheet" href="estilo/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Sistema de Notas</h1>
 
     <section id="calculo">
-        <p><strong>Matéria</strong></p>
-        <p>Português:</p>
-        <p>Matemática:</p>
-        <p>Biologia:</p>
-        <p>História:</p>
-        <p>Geografia:</p>
+        <table>
+            <tr>
+                <th id="dado1">Matéria</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Média</th>
+            </tr>
 
-        <p><strong>Nota 1</strong></p>
-        <input type="number" name="" id="">+
-        <input type="number" name="" id="">+
-        <input type="number" name="" id="">+
-        <input type="number" name="" id="">+
-        <input type="number" name="" id="">+
+            <tr>
+                <td class="materia">Português</td>
+                <td><input type="number" name="" id="">+</td>
+                <td><input type="number" name="" id="">=</td>
+                <td><input type="number" name="" id=""></td>
+            </tr>
 
-        <p><strong>Nota 2</strong></p>
-        <input type="number" name="" id="">
-        <input type="number" name="" id="">
-        <input type="number" name="" id="">
-        <input type="number" name="" id="">
-        <input type="number" name="" id="">
+            <tr>
+                <td class="materia">Matemática</td>
+                <td><input type="number" name="" id="">+</td>
+                <td><input type="number" name="" id="">=</td>
+                <td><input type="number" name="" id=""></td>
+            </tr>
 
-        <p><strong>Média</strong></p>
-        <input type="number" name="" id="">
-        <input type="number" name="" id="">
-        <input type="number" name="" id="">
-        <input type="number" name="" id="">
-        <input type="number" name="" id="">
+            <tr>
+                <td class="materia">Biologia</td>
+                <td><input type="number" name="" id="">+</td>
+                <td><input type="number" name="" id="">=</td>
+                <td><input type="number" name="" id=""></td>
+            </tr>
 
-        <input type="button" value="Calcular Média">
+            <tr>
+                <td class="materia">História</td>
+                <td><input type="number" name="" id="">+</td>
+                <td><input type="number" name="" id="">=</td>
+                <td><input type="number" name="" id=""></td>
+            </tr>
+
+            <tr>
+                <td class="materia">Geografia</td>
+                <td><input type="number" name="" id="">+</td>
+                <td><input type="number" name="" id="">=</td>
+                <td><input type="number" name="" id=""></td>
+            </tr>
+        </table>
     </section>
 
     <section id="resultado">
@@ -50,4 +66,5 @@
         <input type="button" value="Ver Resultado">
     </section>
 </body>
+
 </html>
