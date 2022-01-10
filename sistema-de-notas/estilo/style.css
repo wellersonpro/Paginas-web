@@ -31,6 +31,7 @@ h1 {
     padding: 20px;
 }
 
+/*========================================ESTILO DA ÁREA DE CALCULOS========================================*/
 section#calculo {
     background-color: var(--cor03);
     margin: 20px auto;
@@ -39,6 +40,17 @@ section#calculo {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+section#calculo input#botao {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: var(--cor04);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 table {
@@ -71,7 +83,13 @@ table tr td input {
     width: 60px;
     border-radius: 5px;
 }
+/*==========================================================================================================*/
 
+
+
+
+
+/*=======================================ESTILO DA ÁREA DE RESULTADOS=======================================*/
 section#resultado {
     background-color: var(--cor03);
     margin: 20px auto;
@@ -81,3 +99,21 @@ section#resultado {
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
 }
+
+section#resultado p#titulores {
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+}
+
+section#resultado input {
+    display: block;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: var(--cor04);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/*==========================================================================================================*/
