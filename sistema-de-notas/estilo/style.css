@@ -94,7 +94,7 @@ section#resultado {
     background-color: var(--cor03);
     margin: 20px auto;
     width: 700px;
-    height: 200px;
+    /*height: 200px;*/
     padding: 20px;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
@@ -115,5 +115,29 @@ section#resultado input {
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
+}
+
+section#resultado p#apr {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+section#resultado p#rec {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: 10px;
 }
 /*==========================================================================================================*/
