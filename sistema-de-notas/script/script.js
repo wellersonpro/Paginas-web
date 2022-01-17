@@ -76,28 +76,29 @@ function soma01() {
 
     let img = document.querySelector('img.fotoresultado')
     let final = document.querySelector('input#final');
-    let apr = document.querySelector('p#apr');
-    let rec = document.querySelector('p#rec');
-    let rep = document.querySelector('p#rep');
+    let p = document.querySelector('p.sit');
     final.addEventListener("click", function (result) {
         result.preventDefault();
 
-            if (media05 >= 7) {
+            if (media >= 7 && media02 >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
                 img.setAttribute('src', 'imagens/aprovado.png');
-                apr.innerHTML = ''
-                apr.innerHTML += 'Aluno aprovado'
+                p.setAttribute('id', 'apr');
+                p.innerHTML = ''
+                p.innerHTML += 'Aluno aprovado'
             }
 
-            else if (media05 < 7 && media05 >= 5) {
+            else if (media < 7 && media >= 5 || media02 < 7 && media02 >= 5 || media03 < 7 && media03 >= 5 || media04 < 7 && media04 >= 5 || media05 < 7 && media05 >= 5) {
                 img.setAttribute('src', 'imagens/recuperacao.png');
-                rec.innerHTML = ''
-                rec.innerHTML += 'Aluno em recuperação'
+                p.setAttribute('id', 'rec');
+                p.innerHTML = ''
+                p.innerHTML += 'Aluno em recuperação'
             }
 
             else {
                 img.setAttribute('src', 'imagens/reprovado.png');
-                rep.innerHTML = ''
-                rep.innerHTML += 'Aluno Reprovado'
+                p.setAttribute('id', 'rep');
+                p.innerHTML = ''
+                p.innerHTML += 'Aluno Reprovado'
             }
         apr.appendChild(img), rec.appendChild(img), rep.appendChild(img);
     })

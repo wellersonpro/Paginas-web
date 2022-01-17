@@ -122,7 +122,7 @@ section#resultado p#apr {
     font-size: 20px;
     font-weight: bold;
     color: green;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px;
 }
 
@@ -131,7 +131,7 @@ section#resultado p#rec {
     font-size: 20px;
     font-weight: bold;
     color: yellow;
-    margin-top: -20px;
+    margin-top: 40px;
     padding: 10px;
 }
 
@@ -140,13 +140,13 @@ section#resultado p#rep {
     font-size: 20px;
     font-weight: bold;
     color: red;
-    margin-top: -40px;
+    margin-top: 40px;
     padding: 10px;
 }
 
 img {
     display: block;
-    margin: auto;
+    margin: 15px auto;
     padding: 10px;
 }
 /*==========================================================================================================*/
