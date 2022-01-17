@@ -81,25 +81,67 @@ function soma01() {
         result.preventDefault();
 
             if (media >= 7 && media02 >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
+                img.removeAttribute('src');
                 img.setAttribute('src', 'imagens/aprovado.png');
+                p.removeAttribute('id');
                 p.setAttribute('id', 'apr');
                 p.innerHTML = ''
                 p.innerHTML += 'Aluno aprovado'
             }
 
-            else if (media < 7 && media >= 5 || media02 < 7 && media02 >= 5 || media03 < 7 && media03 >= 5 || media04 < 7 && media04 >= 5 || media05 < 7 && media05 >= 5) {
+            else if (media < 7 && media >= 5) {
+                img.removeAttribute('src');
                 img.setAttribute('src', 'imagens/recuperacao.png');
+                p.removeAttribute('id');
+                p.setAttribute('id', 'rec');
+                p.innerHTML = ''
+                p.innerHTML += 'Aluno em recuperação'
+            }
+
+            else if (media02 < 7 && media02 >= 5) {
+                img.removeAttribute('src');
+                img.setAttribute('src', 'imagens/recuperacao.png');
+                p.removeAttribute('id');
+                p.setAttribute('id', 'rec');
+                p.innerHTML = ''
+                p.innerHTML += 'Aluno em recuperação'
+            }
+
+            else if (media03 < 7 && media03 >= 5) {
+                img.removeAttribute('src');
+                img.setAttribute('src', 'imagens/recuperacao.png');
+                p.removeAttribute('id');
+                p.setAttribute('id', 'rec');
+                p.innerHTML = ''
+                p.innerHTML += 'Aluno em recuperação'
+            }
+
+            else if (media04 < 7 && media04 >= 5) {
+                img.removeAttribute('src');
+                img.setAttribute('src', 'imagens/recuperacao.png');
+                p.removeAttribute('id');
+                p.setAttribute('id', 'rec');
+                p.innerHTML = ''
+                p.innerHTML += 'Aluno em recuperação'
+            }
+
+            else if (media05 < 7 && media05 >= 5) {
+                img.removeAttribute('src');
+                img.setAttribute('src', 'imagens/recuperacao.png');
+                p.removeAttribute('id');
                 p.setAttribute('id', 'rec');
                 p.innerHTML = ''
                 p.innerHTML += 'Aluno em recuperação'
             }
 
             else {
+                img.removeAttribute('src')
                 img.setAttribute('src', 'imagens/reprovado.png');
+                p.removeAttribute('id');
                 p.setAttribute('id', 'rep');
                 p.innerHTML = ''
                 p.innerHTML += 'Aluno Reprovado'
             }
-        apr.appendChild(img), rec.appendChild(img), rep.appendChild(img);
+        p.appendChild(img);
     })
 }
