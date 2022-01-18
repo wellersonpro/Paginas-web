@@ -89,7 +89,7 @@ function soma01() {
                 p.innerHTML += 'Aluno aprovado'
             }
 
-            else if (media < 7 && media >= 5) {
+            else if (media < 7 && media >= 5 && media02 >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
                 img.removeAttribute('src');
                 img.setAttribute('src', 'imagens/recuperacao.png');
                 p.removeAttribute('id');
@@ -98,7 +98,7 @@ function soma01() {
                 p.innerHTML += 'Aluno em recuperação'
             }
 
-            else if (media02 < 7 && media02 >= 5) {
+            else if (media02 < 7 && media02 >= 5 && media >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
                 img.removeAttribute('src');
                 img.setAttribute('src', 'imagens/recuperacao.png');
                 p.removeAttribute('id');
@@ -107,7 +107,7 @@ function soma01() {
                 p.innerHTML += 'Aluno em recuperação'
             }
 
-            else if (media03 < 7 && media03 >= 5) {
+            else if (media03 < 7 && media03 >= 5 && media02 >= 7 && media >= 7 && media04 >= 7 && media05 >= 7) {
                 img.removeAttribute('src');
                 img.setAttribute('src', 'imagens/recuperacao.png');
                 p.removeAttribute('id');
@@ -116,7 +116,7 @@ function soma01() {
                 p.innerHTML += 'Aluno em recuperação'
             }
 
-            else if (media04 < 7 && media04 >= 5) {
+            else if (media04 < 7 && media04 >= 5 && media03 >= 7 && media02 >= 7 && media >= 7 && media05 >= 7) {
                 img.removeAttribute('src');
                 img.setAttribute('src', 'imagens/recuperacao.png');
                 p.removeAttribute('id');
@@ -125,7 +125,7 @@ function soma01() {
                 p.innerHTML += 'Aluno em recuperação'
             }
 
-            else if (media05 < 7 && media05 >= 5) {
+            else if (media05 < 7 && media05 >= 5 && media04 >= 7 && media03 >= 7 && media02 >= 7 && media >= 7) {
                 img.removeAttribute('src');
                 img.setAttribute('src', 'imagens/recuperacao.png');
                 p.removeAttribute('id');
