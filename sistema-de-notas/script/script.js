@@ -1,10 +1,15 @@
 function soma01() {
+    // Pegando os valores dos inputs e adicionando cada um em uma variável.
     let portugues01 = document.querySelector('input#portugues01');
     let portugues02 = document.querySelector('input#portugues02');
     let portugues03 = document.querySelector('input#portugues03');
     let portugues04 = document.querySelector('input#portugues04');
     let mediaPortugues = document.querySelector('p#mediaPortugues');
 
+/*
+Essas variáveis são então convertidas para o tipo númerico e armazenadas cada uma dentro de uma variável 
+que são somadas, divididas e apresentadas tela.
+*/
     let portugues1 = Number(portugues01.value);
     let portugues2 = Number(portugues02.value);
     let portugues3 = Number(portugues03.value);
@@ -74,74 +79,76 @@ function soma01() {
 
 
 
-    let img = document.querySelector('img.fotoresultado')
-    let final = document.querySelector('input#final');
-    let p = document.querySelector('p.sit');
+    let img = document.querySelector('img.fotoresultado') // Tag imagem vazia.
+    let final = document.querySelector('input#final'); // Botão de resultado final.
+    let p = document.querySelector('p.sit'); // Campo de texto da situação do aluno.
+
+    // O botão de resultado final quando clicado, vai chamar a function para analisar as notas informadas.
     final.addEventListener("click", function (result) {
         result.preventDefault();
 
-            if (media >= 7 && media02 >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
-                img.removeAttribute('src');
-                img.setAttribute('src', 'imagens/aprovado.png');
-                p.removeAttribute('id');
-                p.setAttribute('id', 'apr');
-                p.innerHTML = ''
-                p.innerHTML += 'Aluno aprovado'
-            }
+        if (media >= 7 && media02 >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
+            img.removeAttribute('src');
+            img.setAttribute('src', 'imagens/aprovado.png');
+            p.removeAttribute('id');
+            p.setAttribute('id', 'apr');
+            p.innerHTML = ''
+            p.innerHTML += 'Aluno aprovado'
+        }
 
-            else if (media < 7 && media >= 5 && media02 >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
-                img.removeAttribute('src');
-                img.setAttribute('src', 'imagens/recuperacao.png');
-                p.removeAttribute('id');
-                p.setAttribute('id', 'rec');
-                p.innerHTML = ''
-                p.innerHTML += 'Aluno em recuperação'
-            }
+        else if (media < 7 && media >= 5 && media02 >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
+            img.removeAttribute('src');
+            img.setAttribute('src', 'imagens/recuperacao.png');
+            p.removeAttribute('id');
+            p.setAttribute('id', 'rec');
+            p.innerHTML = ''
+            p.innerHTML += 'Aluno em recuperação'
+        }
 
-            else if (media02 < 7 && media02 >= 5 && media >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
-                img.removeAttribute('src');
-                img.setAttribute('src', 'imagens/recuperacao.png');
-                p.removeAttribute('id');
-                p.setAttribute('id', 'rec');
-                p.innerHTML = ''
-                p.innerHTML += 'Aluno em recuperação'
-            }
+        else if (media02 < 7 && media02 >= 5 && media >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
+            img.removeAttribute('src');
+            img.setAttribute('src', 'imagens/recuperacao.png');
+            p.removeAttribute('id');
+            p.setAttribute('id', 'rec');
+            p.innerHTML = ''
+            p.innerHTML += 'Aluno em recuperação'
+        }
 
-            else if (media03 < 7 && media03 >= 5 && media02 >= 7 && media >= 7 && media04 >= 7 && media05 >= 7) {
-                img.removeAttribute('src');
-                img.setAttribute('src', 'imagens/recuperacao.png');
-                p.removeAttribute('id');
-                p.setAttribute('id', 'rec');
-                p.innerHTML = ''
-                p.innerHTML += 'Aluno em recuperação'
-            }
+        else if (media03 < 7 && media03 >= 5 && media02 >= 7 && media >= 7 && media04 >= 7 && media05 >= 7) {
+            img.removeAttribute('src');
+            img.setAttribute('src', 'imagens/recuperacao.png');
+            p.removeAttribute('id');
+            p.setAttribute('id', 'rec');
+            p.innerHTML = ''
+            p.innerHTML += 'Aluno em recuperação'
+        }
 
-            else if (media04 < 7 && media04 >= 5 && media03 >= 7 && media02 >= 7 && media >= 7 && media05 >= 7) {
-                img.removeAttribute('src');
-                img.setAttribute('src', 'imagens/recuperacao.png');
-                p.removeAttribute('id');
-                p.setAttribute('id', 'rec');
-                p.innerHTML = ''
-                p.innerHTML += 'Aluno em recuperação'
-            }
+        else if (media04 < 7 && media04 >= 5 && media03 >= 7 && media02 >= 7 && media >= 7 && media05 >= 7) {
+            img.removeAttribute('src');
+            img.setAttribute('src', 'imagens/recuperacao.png');
+            p.removeAttribute('id');
+            p.setAttribute('id', 'rec');
+            p.innerHTML = ''
+            p.innerHTML += 'Aluno em recuperação'
+        }
 
-            else if (media05 < 7 && media05 >= 5 && media04 >= 7 && media03 >= 7 && media02 >= 7 && media >= 7) {
-                img.removeAttribute('src');
-                img.setAttribute('src', 'imagens/recuperacao.png');
-                p.removeAttribute('id');
-                p.setAttribute('id', 'rec');
-                p.innerHTML = ''
-                p.innerHTML += 'Aluno em recuperação'
-            }
+        else if (media05 < 7 && media05 >= 5 && media04 >= 7 && media03 >= 7 && media02 >= 7 && media >= 7) {
+            img.removeAttribute('src');
+            img.setAttribute('src', 'imagens/recuperacao.png');
+            p.removeAttribute('id');
+            p.setAttribute('id', 'rec');
+            p.innerHTML = ''
+            p.innerHTML += 'Aluno em recuperação'
+        }
 
-            else {
-                img.removeAttribute('src')
-                img.setAttribute('src', 'imagens/reprovado.png');
-                p.removeAttribute('id');
-                p.setAttribute('id', 'rep');
-                p.innerHTML = ''
-                p.innerHTML += 'Aluno Reprovado'
-            }
+        else {
+            img.removeAttribute('src')
+            img.setAttribute('src', 'imagens/reprovado.png');
+            p.removeAttribute('id');
+            p.setAttribute('id', 'rep');
+            p.innerHTML = ''
+            p.innerHTML += 'Aluno Reprovado'
+        }
         p.appendChild(img);
     })
 }
