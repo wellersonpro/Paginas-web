@@ -5,6 +5,7 @@ function soma01() {
     let portugues03 = document.querySelector('input#portugues03');
     let portugues04 = document.querySelector('input#portugues04');
     let mediaPortugues = document.querySelector('p#mediaPortugues');
+    let nomeDoAluno = document.querySelector('input#aluno').value;
 
 /*
 Essas variáveis são então convertidas para o tipo númerico e armazenadas cada uma dentro de uma variável 
@@ -93,7 +94,7 @@ que são somadas, divididas e apresentadas tela.
             p.removeAttribute('id');
             p.setAttribute('id', 'apr');
             p.innerHTML = ''
-            p.innerHTML += 'Aluno aprovado'
+            p.innerHTML += `Aluno(a) ${nomeDoAluno} aprovado`
         }
 
         else if (media < 7 && media >= 5 && media02 >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
@@ -102,7 +103,7 @@ que são somadas, divididas e apresentadas tela.
             p.removeAttribute('id');
             p.setAttribute('id', 'rec');
             p.innerHTML = ''
-            p.innerHTML += 'Aluno em recuperação'
+            p.innerHTML += `Aluno(a) ${nomeDoAluno} em recuperação`
         }
 
         else if (media02 < 7 && media02 >= 5 && media >= 7 && media03 >= 7 && media04 >= 7 && media05 >= 7) {
@@ -111,7 +112,7 @@ que são somadas, divididas e apresentadas tela.
             p.removeAttribute('id');
             p.setAttribute('id', 'rec');
             p.innerHTML = ''
-            p.innerHTML += 'Aluno em recuperação'
+            p.innerHTML += `Aluno(a) ${nomeDoAluno} em recuperação`
         }
 
         else if (media03 < 7 && media03 >= 5 && media02 >= 7 && media >= 7 && media04 >= 7 && media05 >= 7) {
@@ -120,7 +121,7 @@ que são somadas, divididas e apresentadas tela.
             p.removeAttribute('id');
             p.setAttribute('id', 'rec');
             p.innerHTML = ''
-            p.innerHTML += 'Aluno em recuperação'
+            p.innerHTML += `Aluno(a) ${nomeDoAluno} em recuperação`
         }
 
         else if (media04 < 7 && media04 >= 5 && media03 >= 7 && media02 >= 7 && media >= 7 && media05 >= 7) {
@@ -129,7 +130,7 @@ que são somadas, divididas e apresentadas tela.
             p.removeAttribute('id');
             p.setAttribute('id', 'rec');
             p.innerHTML = ''
-            p.innerHTML += 'Aluno em recuperação'
+            p.innerHTML += `Aluno(a) ${nomeDoAluno} em recuperação`
         }
 
         else if (media05 < 7 && media05 >= 5 && media04 >= 7 && media03 >= 7 && media02 >= 7 && media >= 7) {
@@ -138,7 +139,7 @@ que são somadas, divididas e apresentadas tela.
             p.removeAttribute('id');
             p.setAttribute('id', 'rec');
             p.innerHTML = ''
-            p.innerHTML += 'Aluno em recuperação'
+            p.innerHTML += `Aluno(a) ${nomeDoAluno} em recuperação`
         }
 
         else {
@@ -147,7 +148,7 @@ que são somadas, divididas e apresentadas tela.
             p.removeAttribute('id');
             p.setAttribute('id', 'rep');
             p.innerHTML = ''
-            p.innerHTML += 'Aluno Reprovado'
+            p.innerHTML += `Aluno(a) ${nomeDoAluno} Reprovado`
         }
         p.appendChild(img);
     })

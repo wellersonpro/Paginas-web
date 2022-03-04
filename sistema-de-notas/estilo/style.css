@@ -38,7 +38,7 @@ section#calculo {
     background-color: var(--cor03);
     margin: 20px auto;
     max-width: 700px;
-    height: 350px;
+    height: 360px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
@@ -86,6 +86,17 @@ table tr td input {
     margin-right: 10px;
     padding: 2px;
     width: 60px;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bolder;
+    margin-left: 52px;
+}
+
+input#aluno {
+    width: 150px;
+    padding: 2px;
     border-radius: 5px;
 }
 /*==========================================================================================================*/
