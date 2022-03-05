@@ -6,15 +6,40 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-image: url('imagens/angelo-abear-unsplash.jpg');
+    width: 100%;
+    min-height: 100vh;
+}
+
+:root {
+    --cor01: #1b262c67;
+    --cor02: #3282B8;
+    --cor03: #0F4C75;
+    --cor04: #BBE1FA;
+}
+
+/* 
+CORES
+#1B262C
+#0F4C75
+#3282B8
+#BBE1FA
+*/
+
+/*============ESTILO DO CAIXA=============*/
 section#externa {
-    margin: 10% auto;
-    background-color: rgb(106, 8, 145);
+    margin: 4% auto -3% auto;
+    background-color: var(--cor01);
+    border: 2px solid var(--cor02);
     max-width: 600px;
     height: 300px;
     padding: 10px;
     border-radius: 20px;
     color: white;
     font-size: 20px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 section#interna {
@@ -28,21 +53,71 @@ h1 {
 }
 
 section input#pedido {
-    width: 70px;
-    padding: 2px;
+    width: 75px;
+    padding: 4px;
     margin-top: 30px;
+    background-color: var(--cor03);
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
 }
 
 section input#qtd {
-    width: 70px;
-    padding: 2px;
+    width: 75px;
+    padding: 4px;
     margin-left: 12px;
     margin-top: 10px;
+    background-color: var(--cor03);
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
 }
 
 section input#dinheiro {
-    width: 70px;
-    padding: 2px;
+    width: 75px;
+    padding: 4px;
     margin-left: 41px;
     margin-top: 10px;
+    background-color: var(--cor03);
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
 }
+/*========================================*/
+
+
+/*============ESTILO DA TABELA============*/
+section#tabela {
+    margin: 5% auto;
+    background-color: #1b262c6e;
+    border: 2px solid #3282B8;
+    max-width: 600px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 19px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+section#tabela table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+section#tabela table tr th {
+    border: 1px solid white;
+    width: 160px;
+    padding: 5px;
+}
+
+section#tabela table tr td {
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+}
+/*========================================*/
