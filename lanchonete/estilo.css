@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'pluto';
+    src: url(fontes/pluto_revolution/pluto_revo.ttf)
+    format('opentype')
+}
+
+@media screen and (max-width: 420px) {
+    body header h1 {
+        font-size: 1.4em;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +38,25 @@ CORES
 #3282B8
 #BBE1FA
 */
+
+/*============ESTILO DO CABEÇALHO=========*/
+header {
+    background-color: var(--cor01);
+    border: 2px solid var(--cor02);
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 1.8em;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+header h1 {
+    font-family: 'pluto';
+    letter-spacing: 4px;
+}
+/*========================================*/
+
 
 /*============ESTILO DO CAIXA=============*/
 section#externa {
@@ -56,8 +87,9 @@ section input#pedido {
     width: 75px;
     padding: 4px;
     margin-top: 30px;
-    background-color: var(--cor03);
-    border: none;
+    background-color: transparent;
+    border: 1px solid var(--cor02);
+    border-radius: 10px;
     color: white;
     font-weight: bolder;
     font-size: 17px;
@@ -68,8 +100,9 @@ section input#qtd {
     padding: 4px;
     margin-left: 12px;
     margin-top: 10px;
-    background-color: var(--cor03);
-    border: none;
+    background-color: transparent;
+    border: 1px solid var(--cor02);
+    border-radius: 10px;
     color: white;
     font-weight: bolder;
     font-size: 17px;
@@ -80,8 +113,9 @@ section input#dinheiro {
     padding: 4px;
     margin-left: 41px;
     margin-top: 10px;
-    background-color: var(--cor03);
-    border: none;
+    background-color: transparent;
+    border: 1px solid var(--cor02);
+    border-radius: 10px;
     color: white;
     font-weight: bolder;
     font-size: 17px;
@@ -95,7 +129,6 @@ section#tabela {
     background-color: #1b262c6e;
     border: 2px solid #3282B8;
     max-width: 600px;
-    height: 300px;
     padding: 10px;
     border-radius: 20px;
     color: white;
@@ -121,3 +154,8 @@ section#tabela table tr td {
     text-align: center;
 }
 /*========================================*/
+
+p#credito, a {
+    color: white;
+    text-align: center;
+}
