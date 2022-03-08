@@ -64,7 +64,7 @@ section#externa {
     background-color: var(--cor01);
     border: 2px solid var(--cor02);
     max-width: 600px;
-    height: 300px;
+    height: 320px;
     padding: 10px;
     border-radius: 20px;
     color: white;
@@ -108,6 +108,24 @@ section input#qtd {
     font-size: 17px;
 }
 
+section input#adicionar {
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 210px;
+    background-color: transparent;
+    border: 1px solid var(--cor02);
+    border-radius: 10px;
+    color: white;
+    font: bold 17px Arial, sans-serif;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+section input#adicionar:hover {
+    background-color: var(--cor03);
+}
+
 section input#dinheiro {
     width: 75px;
     padding: 4px;
@@ -119,6 +137,26 @@ section input#dinheiro {
     color: white;
     font-weight: bolder;
     font-size: 17px;
+}
+
+section input#confirma {
+    display: block;
+    padding: 8px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+    background-color: transparent;
+    border: 1px solid var(--cor02);
+    border-radius: 10px;
+    color: white;
+    font: bold 17px Arial, sans-serif;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+section input#confirma:hover {
+    background-color: var(--cor03);
 }
 /*========================================*/
 
