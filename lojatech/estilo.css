@@ -71,6 +71,7 @@ section#externa {
     font-size: 20px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.288);
 }
 
 section#interna {
@@ -83,10 +84,10 @@ h1 {
     text-align: center;
 }
 
-section input#pedido {
-    width: 75px;
+section input#item {
+    width: 110px;
     padding: 4px;
-    margin-top: 30px;
+    margin-top: 15px;
     background-color: transparent;
     border: 1px solid var(--cor02);
     border-radius: 10px;
@@ -95,22 +96,9 @@ section input#pedido {
     font-size: 17px;
 }
 
-section input#qtd {
-    width: 75px;
-    padding: 4px;
-    margin-left: 12px;
-    margin-top: 10px;
-    background-color: transparent;
-    border: 1px solid var(--cor02);
-    border-radius: 10px;
-    color: white;
-    font-weight: bolder;
-    font-size: 17px;
-}
-
-section input#adicionar {
+section input#verificar {
     padding: 8px;
-    margin-top: 8px;
+    margin-top: 30px;
     margin-bottom: 15px;
     width: 210px;
     background-color: transparent;
@@ -122,41 +110,16 @@ section input#adicionar {
     cursor: pointer;
 }
 
-section input#adicionar:hover {
+section input#verificar:hover {
     background-color: var(--cor03);
 }
 
-section input#dinheiro {
-    width: 75px;
-    padding: 4px;
-    margin-left: 41px;
-    margin-top: 10px;
-    background-color: transparent;
-    border: 1px solid var(--cor02);
-    border-radius: 10px;
+div#lista p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
     color: white;
     font-weight: bolder;
-    font-size: 17px;
-}
-
-section input#confirma {
-    display: block;
-    padding: 8px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 210px;
-    background-color: transparent;
-    border: 1px solid var(--cor02);
-    border-radius: 10px;
-    color: white;
-    font: bold 17px Arial, sans-serif;
-    transition-duration: .3s;
-    cursor: pointer;
-}
-
-section input#confirma:hover {
-    background-color: var(--cor03);
 }
 /*========================================*/
 
@@ -173,6 +136,7 @@ section#tabela {
     font-size: 19px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.288);
 }
 
 section#tabela table {
