@@ -24,6 +24,8 @@
             background-image: linear-gradient(to right, blue, black);
         }
 
+        
+        
         section#barra01 {
             margin: 5% auto;
             width: 100px;
@@ -36,7 +38,7 @@
 
         @keyframes rotaciona01 {
             to {
-                transform: rotate(360deg);
+                transform: rotate(360deg); /* Vai rotacionar em 360graus*/
             }
         }
 
@@ -74,11 +76,12 @@
             height: 26px;
             animation: rotaciona03 5s linear infinite;
         }
-
+        
+        /* A barra(div) começa com tamanho de 10px e vai aumentando até 196px durante 5 segundos, conforme determinado em animation */
         @keyframes rotaciona03 {
             0% {
                 width: 10px;
-                background-color: var(--cor01);
+                background-color: var(--cor01); 
             }
             100% {
                 width: 196px;
