@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --cor01: rgb(132, 0, 255);
+            --cor02: rgb(11, 212, 196);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(to right, blue, black);
+        }
+
+        section#barra01 {
+            margin: 5% auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 50px solid var(--cor01);
+            border-top-color: var(--cor02);
+            animation: rotaciona01 1s linear infinite;
+        }
+
+        @keyframes rotaciona01 {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        section#barra02 {
+            margin: 5% auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 15px solid var(--cor01);
+            border-top-color: var(--cor02);
+            border-bottom-color: var(--cor02);
+            animation: rotaciona02 1s linear infinite;
+        }
+
+        @keyframes rotaciona02 {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        
+        section#barra03 {
+            margin: 5% auto;
+            width: 200px;
+            height: 30px;
+            border-radius: 5%;
+            border: 2px solid var(--cor01);
+        }
+
+        div {
+            width: 196px;
+            height: 26px;
+            animation: rotaciona03 5s linear infinite;
+        }
+
+        @keyframes rotaciona03 {
+            0% {
+                width: 10px;
+                background-color: var(--cor01);
+            }
+            100% {
+                width: 196px;
+                background-color: var(--cor01);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="barra01">
+    </section>
+
+    <section id="barra02">
+    </section>
+
+    <section id="barra03">
+        <div></div>
+    </section>
+</body>
+
+</html>
