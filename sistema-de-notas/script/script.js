@@ -1,3 +1,163 @@
+function alternar() {
+    let secaoBotoes = document.querySelector('section#btn');
+    let secaoCalculo = document.querySelector('section#calculo');
+    let secaoResultado = document.querySelector('section#resultado');
+    let botaoLight = document.querySelector('input#Light');
+    let botaoDark = document.querySelector('input#Dark');
+    let aluno = document.querySelector('label#nomeDoAluno');
+    let campoAluno = document.querySelector('input#aluno');
+    /*let thMateria = document.querySelector('th#dado1');*/
+    let todosThs = document.getElementsByTagName('th');
+    let todosInputsNumber = document.getElementsByName('disciplinas');
+    let materias = document.getElementsByName('cadaMateria');
+    let todasMedias = document.getElementsByName('cadaMedia');
+    let botaoCalcularMedia = document.querySelector('input#botao');
+    let tituloRespostaFinal = document.querySelector('p#tituloResposta');
+    this.final = document.getElementsByName('final'); // Botão de resultado final.
+
+    secaoBotoes.removeAttribute('id');
+    secaoBotoes.setAttribute('id', 'btnDark');
+
+    secaoCalculo.removeAttribute('id');
+    secaoCalculo.setAttribute('id', 'calculoDark');
+
+    secaoResultado.removeAttribute('id');
+    secaoResultado.setAttribute('id', 'resultadoDark');
+
+    botaoLight.removeAttribute('id');
+    botaoLight.setAttribute('id', 'Dark01');
+
+    botaoDark.removeAttribute('id');
+    botaoDark.setAttribute('id', 'Dark02');
+
+    aluno.removeAttribute('id');
+    aluno.setAttribute('id', 'Dark03');
+
+    campoAluno.removeAttribute('id');
+    campoAluno.setAttribute('id', 'Dark04');
+
+    /*thMateria.removeAttribute('id');
+    thMateria.setAttribute('id', 'Dark05');*/
+
+    
+    todosThs[0].removeAttribute('id');
+    todosThs[0].setAttribute('id', 'Dark05');
+
+    todosThs[1].removeAttribute('class');
+    todosThs[1].setAttribute('class', 'Dark06');
+
+    todosThs[2].removeAttribute('class');
+    todosThs[2].setAttribute('class', 'Dark06');
+
+    todosThs[3].removeAttribute('class');
+    todosThs[3].setAttribute('class', 'Dark06');
+
+    todosThs[4].removeAttribute('class');
+    todosThs[4].setAttribute('class', 'Dark06');
+
+    todosThs[5].removeAttribute('class');
+    todosThs[5].setAttribute('class', 'Dark06');
+    
+    todosInputsNumber[0].removeAttribute('class');
+    todosInputsNumber[0].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[1].removeAttribute('class');
+    todosInputsNumber[1].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[2].removeAttribute('class');
+    todosInputsNumber[2].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[3].removeAttribute('class');
+    todosInputsNumber[3].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[4].removeAttribute('class');
+    todosInputsNumber[4].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[5].removeAttribute('class');
+    todosInputsNumber[5].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[6].removeAttribute('class');
+    todosInputsNumber[6].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[7].removeAttribute('class');
+    todosInputsNumber[7].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[8].removeAttribute('class');
+    todosInputsNumber[8].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[9].removeAttribute('class');
+    todosInputsNumber[9].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[10].removeAttribute('class');
+    todosInputsNumber[10].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[11].removeAttribute('class');
+    todosInputsNumber[11].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[12].removeAttribute('class');
+    todosInputsNumber[12].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[13].removeAttribute('class');
+    todosInputsNumber[13].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[14].removeAttribute('class');
+    todosInputsNumber[14].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[15].removeAttribute('class');
+    todosInputsNumber[15].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[16].removeAttribute('class');
+    todosInputsNumber[16].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[17].removeAttribute('class');
+    todosInputsNumber[17].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[18].removeAttribute('class');
+    todosInputsNumber[18].setAttribute('class', 'Dark07');
+
+    todosInputsNumber[19].removeAttribute('class');
+    todosInputsNumber[19].setAttribute('class', 'Dark07');
+
+    materias[0].removeAttribute('class');
+    materias[0].setAttribute('class', 'Dark08');
+
+    materias[1].removeAttribute('class');
+    materias[1].setAttribute('class', 'Dark08');
+
+    materias[2].removeAttribute('class');
+    materias[2].setAttribute('class', 'Dark08');
+
+    materias[3].removeAttribute('class');
+    materias[3].setAttribute('class', 'Dark08');
+
+    materias[4].removeAttribute('class');
+    materias[4].setAttribute('class', 'Dark08');
+
+    todasMedias[0].removeAttribute('class');
+    todasMedias[0].setAttribute('class', 'Dark09');
+
+    todasMedias[1].removeAttribute('class');
+    todasMedias[1].setAttribute('class', 'Dark09');
+
+    todasMedias[2].removeAttribute('class');
+    todasMedias[2].setAttribute('class', 'Dark09');
+
+    todasMedias[3].removeAttribute('class');
+    todasMedias[3].setAttribute('class', 'Dark09');
+
+    todasMedias[4].removeAttribute('class');
+    todasMedias[4].setAttribute('class', 'Dark09');
+
+    botaoCalcularMedia.removeAttribute('id');
+    botaoCalcularMedia.setAttribute('id', 'Dark10');
+
+    tituloRespostaFinal.removeAttribute('id');
+    tituloRespostaFinal.setAttribute('id', 'Dark11');
+
+    this.final[0].removeAttribute('id');
+    this.final[0].setAttribute('id', 'Dark12');
+}
+
 function soma01() {
     // Pegando os valores dos inputs e adicionando cada um em uma variável.
     let portugues01 = document.querySelector('input#portugues01');
@@ -81,7 +241,6 @@ que são somadas, divididas e apresentadas tela.
 
 
     let img = document.querySelector('img.fotoresultado') // Tag imagem vazia.
-    let final = document.querySelector('input#final'); // Botão de resultado final.
     let p = document.querySelector('p.sit'); // Campo de texto da situação do aluno.
 
     // O botão de resultado final quando clicado, vai chamar a function para analisar as notas informadas.
