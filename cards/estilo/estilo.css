@@ -48,6 +48,11 @@ div.cards {
     max-width: 310px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.315);
+    transition-duration: .4s;
+}
+
+div.cards:hover {
+    transform: scale(1.15, 1.15);
 }
 
 div.titulo {
