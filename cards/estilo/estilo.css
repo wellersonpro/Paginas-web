@@ -1,18 +1,33 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600&display=swap');
+
+@media screen and (max-width: 930px) {
+    body section#todosOsCards {
+        display: block;
+        width: 310px;
+        margin: 10% auto;
+    }
+    body section#todosOsCards div.cards {
+        margin-bottom: 10px;
+    }
+    body section#creditos {
+        width: 283px;
+    }
+}
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;;
+    background-color: #16C79A;
 }
 
 section#todosOsCards {
     display: flex;
     justify-content: space-around;
-    /*background-color: rgba(0, 0, 255, 0.473);*/
     max-width: 1110px;
     margin: 10% auto;
 }
@@ -30,8 +45,7 @@ div#terceiro {
 }
 
 div.cards {
-    max-width: 350px;
-    /*border: 1px solid black;*/
+    max-width: 310px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.315);
 }
