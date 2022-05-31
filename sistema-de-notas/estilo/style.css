@@ -47,7 +47,7 @@ section#btn {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
 }
 
-section#btn input.modoLight {
+section#btn input {
     margin-left: 5px;
     width: 70px;
     padding: 10px;
@@ -57,7 +57,15 @@ section#btn input.modoLight {
 }
 
 /*=====DARK=====*/
-section#btnDark {
+body.dark01 {
+    background-image: url('../imagens/gradienta-m_7p45JfXQo-unsplash.jpg');
+}
+
+.dark02 {
+    color: white;
+}
+
+section#btn.dark03 {
     background-color: var(--cor02);
     margin: 0 auto;
     max-width: 700px;
@@ -66,7 +74,53 @@ section#btnDark {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
 }
 
-section#calculoDark {
+section#btn.dark03 input.dark04 {
+    background-color: var(--cor01);
+    color: white;
+    margin-left: 5px;
+    width: 70px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section#calculo.dark05 {
+    background-color: var(--cor02);
+    margin: 20px auto;
+    max-width: 700px;
+    height: 360px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+label.dark06 {
+    font-weight: bolder;
+    color: white;
+    margin-left: 52px;
+}
+
+input#aluno.dark07 {
+    background-color: var(--cor01);
+    color: white;
+    width: 150px;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/*
+section#btn.btnDark {
+    background-color: var(--cor02);
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+section.calculoDark {
     background-color: var(--cor02);
     margin: 20px auto;
     max-width: 700px;
@@ -85,7 +139,7 @@ section#resultadoDark {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
 }
 
-section#btnDark input#Dark01 {
+section#btnDark input.Dark01 {
     background-color: var(--cor01);
     margin-left: 5px;
     width: 70px;
@@ -96,7 +150,7 @@ section#btnDark input#Dark01 {
     cursor: pointer;
 }
 
-section#btnDark input#Dark02 {
+section#btnDark input.Dark02 {
     background-color: var(--cor01);
     margin-left: 5px;
     width: 70px;
@@ -107,13 +161,13 @@ section#btnDark input#Dark02 {
     cursor: pointer;
 }
 
-section#calculoDark label#Dark03 {
+section#calculoDark label.Dark03 {
     font-weight: bolder;
     margin-left: 52px;
     color: white;
 }
 
-section#calculoDark input#Dark04 {
+section#calculoDark input.Dark04 {
     width: 150px;
     padding: 2px;
     border-radius: 5px;
@@ -153,7 +207,7 @@ section#calculoDark p.Dark09 {
     color: white;
 }
 
-section#calculoDark input#Dark10 {
+section#calculoDark input.Dark10 {
     display: block;
     margin: 20px auto;
     padding: 15px;
@@ -181,6 +235,7 @@ section#resultadoDark input#Dark12 {
     border-radius: 8px;
     cursor: pointer;
 }
+*/
 /*==============*/
 
 /*==========================================================================================================*/
