@@ -1,5 +1,6 @@
 function alternar() {
     let conjuntoDeTags = document.getElementsByName('conjunto');
+    let botaoLight = document.querySelector('input#Light');
     console.log(conjuntoDeTags);
 
     conjuntoDeTags[0].setAttribute('class', 'dark01');
@@ -10,6 +11,133 @@ function alternar() {
     conjuntoDeTags[5].setAttribute('class', 'dark05');
     conjuntoDeTags[6].setAttribute('class', 'dark06');
     conjuntoDeTags[7].setAttribute('class', 'dark07');
+    conjuntoDeTags[8].setAttribute('class', 'dark02');
+    conjuntoDeTags[9].setAttribute('class', 'dark02');
+    conjuntoDeTags[10].setAttribute('class', 'dark02');
+    conjuntoDeTags[11].setAttribute('class', 'dark02');
+    conjuntoDeTags[12].setAttribute('class', 'dark02');
+    conjuntoDeTags[13].setAttribute('class', 'dark02');
+
+    conjuntoDeTags[14].removeAttribute('class');
+    conjuntoDeTags[14].setAttribute('class', 'dark08');
+    conjuntoDeTags[15].setAttribute('class', 'dark09');
+    conjuntoDeTags[16].setAttribute('class', 'dark09');
+    conjuntoDeTags[17].setAttribute('class', 'dark09');
+    conjuntoDeTags[18].setAttribute('class', 'dark09');
+    conjuntoDeTags[19].setAttribute('class', 'dark02');
+
+    conjuntoDeTags[20].removeAttribute('class');
+    conjuntoDeTags[20].setAttribute('class', 'dark08');
+    conjuntoDeTags[21].setAttribute('class', 'dark09');
+    conjuntoDeTags[22].setAttribute('class', 'dark09');
+    conjuntoDeTags[23].setAttribute('class', 'dark09');
+    conjuntoDeTags[24].setAttribute('class', 'dark09');
+    conjuntoDeTags[25].setAttribute('class', 'dark02');
+
+    conjuntoDeTags[26].removeAttribute('class');
+    conjuntoDeTags[26].setAttribute('class', 'dark08');
+    conjuntoDeTags[27].setAttribute('class', 'dark09');
+    conjuntoDeTags[28].setAttribute('class', 'dark09');
+    conjuntoDeTags[29].setAttribute('class', 'dark09');
+    conjuntoDeTags[30].setAttribute('class', 'dark09');
+    conjuntoDeTags[31].setAttribute('class', 'dark02');
+
+    conjuntoDeTags[32].removeAttribute('class');
+    conjuntoDeTags[32].setAttribute('class', 'dark08');
+    conjuntoDeTags[33].setAttribute('class', 'dark09');
+    conjuntoDeTags[34].setAttribute('class', 'dark09');
+    conjuntoDeTags[35].setAttribute('class', 'dark09');
+    conjuntoDeTags[36].setAttribute('class', 'dark09');
+    conjuntoDeTags[37].setAttribute('class', 'dark02');
+
+    conjuntoDeTags[38].removeAttribute('class');
+    conjuntoDeTags[38].setAttribute('class', 'dark08');
+    conjuntoDeTags[39].setAttribute('class', 'dark09');
+    conjuntoDeTags[40].setAttribute('class', 'dark09');
+    conjuntoDeTags[41].setAttribute('class', 'dark09');
+    conjuntoDeTags[42].setAttribute('class', 'dark09');
+    conjuntoDeTags[43].setAttribute('class', 'dark02');
+
+    conjuntoDeTags[44].setAttribute('class', 'dark10');
+
+    conjuntoDeTags[45].setAttribute('class', 'dark11');
+    conjuntoDeTags[46].setAttribute('class', 'dark02');
+    conjuntoDeTags[47].setAttribute('class', 'dark12');
+    conjuntoDeTags[48].setAttribute('class', 'dark13');
+
+    conjuntoDeTags[49].setAttribute('class', 'dark14');
+    conjuntoDeTags[50].setAttribute('class', 'dark15');
+    conjuntoDeTags[51].setAttribute('class', 'dark15');
+
+    botaoLight.addEventListener("click", function (retornar) {
+        retornar.preventDefault();
+
+        conjuntoDeTags[0].removeAttribute('class', 'dark01');
+        conjuntoDeTags[1].removeAttribute('class', 'dark02');
+        conjuntoDeTags[2].removeAttribute('class', 'dark03');
+        conjuntoDeTags[3].removeAttribute('class', 'dark04');
+        conjuntoDeTags[4].removeAttribute('class', 'dark04');
+        conjuntoDeTags[5].removeAttribute('class', 'dark05');
+        conjuntoDeTags[6].removeAttribute('class', 'dark06');
+        conjuntoDeTags[7].removeAttribute('class', 'dark07');
+        conjuntoDeTags[8].removeAttribute('class', 'dark02');
+        conjuntoDeTags[9].removeAttribute('class', 'dark02');
+        conjuntoDeTags[10].removeAttribute('class', 'dark02');
+        conjuntoDeTags[11].removeAttribute('class', 'dark02');
+        conjuntoDeTags[12].removeAttribute('class', 'dark02');
+        conjuntoDeTags[13].removeAttribute('class', 'dark02');
+
+        conjuntoDeTags[14].removeAttribute('class');
+        conjuntoDeTags[14].setAttribute('class', 'Light');
+        conjuntoDeTags[15].removeAttribute('class');
+        conjuntoDeTags[16].removeAttribute('class');
+        conjuntoDeTags[17].removeAttribute('class');
+        conjuntoDeTags[18].removeAttribute('class');
+        conjuntoDeTags[19].removeAttribute('class');
+
+        conjuntoDeTags[20].removeAttribute('class');
+        conjuntoDeTags[20].setAttribute('class', 'Light');
+        conjuntoDeTags[21].removeAttribute('class');
+        conjuntoDeTags[22].removeAttribute('class');
+        conjuntoDeTags[23].removeAttribute('class');
+        conjuntoDeTags[24].removeAttribute('class');
+        conjuntoDeTags[25].removeAttribute('class');
+
+        conjuntoDeTags[26].removeAttribute('class');
+        conjuntoDeTags[26].setAttribute('class', 'Light');
+        conjuntoDeTags[27].removeAttribute('class');
+        conjuntoDeTags[28].removeAttribute('class');
+        conjuntoDeTags[29].removeAttribute('class');
+        conjuntoDeTags[30].removeAttribute('class');
+        conjuntoDeTags[31].removeAttribute('class');
+
+        conjuntoDeTags[32].removeAttribute('class');
+        conjuntoDeTags[32].setAttribute('class', 'Light');
+        conjuntoDeTags[33].removeAttribute('class');
+        conjuntoDeTags[34].removeAttribute('class');
+        conjuntoDeTags[35].removeAttribute('class');
+        conjuntoDeTags[36].removeAttribute('class');
+        conjuntoDeTags[37].removeAttribute('class');
+
+        conjuntoDeTags[38].removeAttribute('class');
+        conjuntoDeTags[38].setAttribute('class', 'Light');
+        conjuntoDeTags[39].removeAttribute('class');
+        conjuntoDeTags[40].removeAttribute('class');
+        conjuntoDeTags[41].removeAttribute('class');
+        conjuntoDeTags[42].removeAttribute('class');
+        conjuntoDeTags[43].removeAttribute('class');
+
+        conjuntoDeTags[44].removeAttribute('class');
+
+        conjuntoDeTags[45].removeAttribute('class');
+        conjuntoDeTags[46].removeAttribute('class');
+        conjuntoDeTags[47].removeAttribute('class');
+        conjuntoDeTags[48].removeAttribute('class');
+
+        conjuntoDeTags[49].removeAttribute('class');
+        conjuntoDeTags[50].removeAttribute('class');
+        conjuntoDeTags[51].removeAttribute('class');
+    })
 }
 
 function soma01() {
@@ -21,10 +149,10 @@ function soma01() {
     let mediaPortugues = document.querySelector('p#mediaPortugues');
     let nomeDoAluno = document.querySelector('input#aluno').value;
 
-/*
-Essas variáveis são então convertidas para o tipo númerico e armazenadas cada uma dentro de uma variável 
-que são somadas, divididas e apresentadas tela.
-*/
+    /*
+    Essas variáveis são então convertidas para o tipo númerico e armazenadas cada uma dentro de uma variável 
+    que são somadas, divididas e apresentadas tela.
+    */
     let portugues1 = Number(portugues01.value);
     let portugues2 = Number(portugues02.value);
     let portugues3 = Number(portugues03.value);
