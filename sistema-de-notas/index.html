@@ -9,89 +9,95 @@
     <title>Sistema de Notas</title>
 </head>
 
-<body>
-    <h1>Sistema de Notas</h1>
+<body name="conjunto">
+    <h1 name="conjunto">Sistema de Notas</h1>
 
-    <section id="calculo">
+    <section id="btn" name="conjunto">
+        <input type="button" value="Light" id="Light" name="conjunto">
+        <input type="button" value="Dark" id="Dark" onclick="alternar()" name="conjunto">
+    </section>
 
-        <label>Nome do Aluno:</label>
-        <input type="text" name="" id="aluno">
+    <section id="calculo" name="conjunto">
+
+        <label name="conjunto">Nome do Aluno:</label>
+        <input type="text" id="aluno" name="conjunto">
 
         <div id="container">
             <table>
                 <tr>
-                    <th id="dado1">Matéria</th>
-                    <th>Nota 1</th>
-                    <th>Nota 2</th>
-                    <th>Nota 3</th>
-                    <th>Nota 4</th>
-                    <th>Média</th>
+                    <th id="dado1" name="conjunto">Matéria</th>
+                    <th name="conjunto">Nota 1</th>
+                    <th name="conjunto">Nota 2</th>
+                    <th name="conjunto">Nota 3</th>
+                    <th name="conjunto">Nota 4</th>
+                    <th name="conjunto">Média</th>
                 </tr>
                 <tr>
-                    <td class="materia">Português</td>
-                    <td><input type="number" name="" id="portugues01"></td>
-                    <td><input type="number" name="" id="portugues02"></td>
-                    <td><input type="number" name="" id="portugues03"></td>
-                    <td><input type="number" name="" id="portugues04"></td>
+                    <td class="Light" name="conjunto">Português</td>
+                    <td><input type="number" id="portugues01" name="conjunto"></td>
+                    <td><input type="number" id="portugues02" name="conjunto"></td>
+                    <td><input type="number" id="portugues03" name="conjunto"></td>
+                    <td><input type="number" id="portugues04" name="conjunto"></td>
                     <td>
-                        <p id="mediaPortugues"></p>
+                        <p id="mediaPortugues" name="conjunto"></p>
                     </td>
                 </tr>
                 <tr>
-                    <td class="materia">Matemática</td>
-                    <td><input type="number" name="" id="matematica01"></td>
-                    <td><input type="number" name="" id="matematica02"></td>
-                    <td><input type="number" name="" id="matematica03"></td>
-                    <td><input type="number" name="" id="matematica04"></td>
+                    <td class="Light" name="conjunto">Matemática</td>
+                    <td><input type="number" id="matematica01" name="conjunto"></td>
+                    <td><input type="number" id="matematica02" name="conjunto"></td>
+                    <td><input type="number" id="matematica03" name="conjunto"></td>
+                    <td><input type="number" id="matematica04" name="conjunto"></td>
                     <td>
-                        <p id="mediaMatematica"></p>
+                        <p id="mediaMatematica" name="conjunto"></p>
                     </td>
                 </tr>
                 <tr>
-                    <td class="materia">Biologia</td>
-                    <td><input type="number" name="" id="biologia01"></td>
-                    <td><input type="number" name="" id="biologia02"></td>
-                    <td><input type="number" name="" id="biologia03"></td>
-                    <td><input type="number" name="" id="biologia04"></td>
+                    <td class="Light" name="conjunto">Biologia</td>
+                    <td><input type="number" id="biologia01" name="conjunto"></td>
+                    <td><input type="number" id="biologia02" name="conjunto"></td>
+                    <td><input type="number" id="biologia03" name="conjunto"></td>
+                    <td><input type="number" id="biologia04" name="conjunto"></td>
                     <td>
-                        <p id="mediaBiologia"></p>
+                        <p id="mediaBiologia" name="conjunto"></p>
                     </td>
                 </tr>
                 <tr>
-                    <td class="materia">História</td>
-                    <td><input type="number" name="" id="historia01"></td>
-                    <td><input type="number" name="" id="historia02"></td>
-                    <td><input type="number" name="" id="historia03"></td>
-                    <td><input type="number" name="" id="historia04"></td>
+                    <td class="Light" name="conjunto">História</td>
+                    <td><input type="number" id="historia01" name="conjunto"></td>
+                    <td><input type="number" id="historia02" name="conjunto"></td>
+                    <td><input type="number" id="historia03" name="conjunto"></td>
+                    <td><input type="number" id="historia04" name="conjunto"></td>
                     <td>
-                        <p id="mediaHistoria"></p>
+                        <p id="mediaHistoria" name="conjunto"></p>
                     </td>
                 </tr>
                 <tr>
-                    <td class="materia">Geografia</td>
-                    <td><input type="number" name="" id="geografia01"></td>
-                    <td><input type="number" name="" id="geografia02"></td>
-                    <td><input type="number" name="" id="geografia03"></td>
-                    <td><input type="number" name="" id="geografia04"></td>
+                    <td class="Light" name="conjunto">Geografia</td>
+                    <td><input type="number" id="geografia01" name="conjunto"></td>
+                    <td><input type="number" id="geografia02" name="conjunto"></td>
+                    <td><input type="number" id="geografia03" name="conjunto"></td>
+                    <td><input type="number" id="geografia04" name="conjunto"></td>
                     <td>
-                        <p id="mediaGeografia"></p>
+                        <p id="mediaGeografia" name="conjunto"></p>
                     </td>
                 </tr>
 
             </table>
         </div>
 
-        <input type="button" id="botao" value="Calcular Média" onclick="soma01()">
+        <input type="button" id="botao" value="Calcular Média" onclick="soma01()" name="conjunto">
     </section>
 
-    <section id="resultado">
-        <p id="tituloResposta">Resultado Final</p>
-        <p id="" class="sit"></p>
+    <section id="resultado" name="conjunto">
+        <p id="tituloResposta" name="conjunto">Resultado Final</p>
+        <p class="sit"></p>
         <img src="" class="fotoresultado" alt="">
 
-        <input type="button" id="final" value="Ver Resultado">
+        <input type="button" id="final" value="Ver Resultado" name="conjunto">
     </section>
-    <p id="nome">Desenvolvido por: wellersonpro</p>
+    <p id="nome" name="conjunto">Desenvolvido por: wellersonpro</p>
+    <p id="creditos" name="conjunto">Photo dark mod by: <a href="https://unsplash.com/@gradienta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" name="conjunto">Gradienta</a> on <a href="https://unsplash.com/s/photos/background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" name="conjunto">Unsplash</a></p>
 
     <script src="script/script.js"></script>
 </body>
