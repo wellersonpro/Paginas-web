@@ -26,10 +26,11 @@ body {
 }
 
 section#todosOsCards {
+    /*background-color: blue;*/
     display: flex;
     justify-content: space-around;
     max-width: 1110px;
-    margin: 10% auto;
+    margin: 7% auto;
 }
 
 div#primeiro {
@@ -45,7 +46,8 @@ div#terceiro {
 }
 
 div.cards {
-    max-width: 310px;
+    max-width: 280px;
+    max-height: inherit;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.315);
     transition-duration: .4s;
@@ -90,5 +92,5 @@ div.subtitulo h2 {
 
 section#creditos {
     width: 304px;
-    margin: auto;
+    margin: -30px auto;
 }
