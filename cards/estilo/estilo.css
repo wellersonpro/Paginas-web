@@ -8,9 +8,11 @@
         width: 280px;
         margin: 10% auto;
     }
+
     body section#todosOsCards div.cards {
         margin-bottom: 40px;
     }
+
     body section#creditos {
         max-width: 350px;
         margin: 40px auto 10px auto;
@@ -22,13 +24,15 @@
         background-size: cover;
     }
 }
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Titillium Web', sans-serif;;
+    font-family: 'Titillium Web', sans-serif;
+    ;
     background-image: url('../imagens/alejandro-gonzalez-h9p1VCgUSgM-unsplash.jpg');
     background-attachment: fixed;
 }
