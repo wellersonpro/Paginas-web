@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/estilo.css">
+    <script src="script/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -21,9 +22,9 @@
             <p>Sortear números de: <input type="number" name="inicio" id="inicio"> até: <input type="number" name="fim" id="fim"></p>
         </section>
 
-        <p></p>
+        <p id="resposta"></p>
 
-        <input type="button" value="Sortear" id="botao">
+        <input type="button" value="Sortear" id="botao" onclick="sortear()">
 
         <p id="aviso">Aviso: Se a quantidade de números sorteados for muito próximo da quantidade de números que serão percorridos, pode aumentar a chance de haver números repetidos.</p>
 
