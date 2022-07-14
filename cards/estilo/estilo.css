@@ -68,28 +68,12 @@ div.cards {
 
     backdrop-filter: blur(3px);
 }
-/*
-div.cards:hover {
-    transform: scale(1.15, 1.15);
-}
-*/
+
 div.titulo {
     padding: 10px;
     color: white;
 }
-/*
-div#foto1 {
-    background-image: url('../imagens/andres-hernandez-aOQe2gLH2WI-unsplash.jpg');
-}
 
-div#foto2 {
-    background-image: url('../imagens/andres-hernandez-eaj3E7NsCMM-unsplash.jpg');
-}
-
-div#foto3 {
-    background-image: url('../imagens/andres-hernandez-IsTr-zZ3vEs-unsplash.jpg');
-}
-*/
 div.fotos {
     overflow: hidden;
     max-width: 280px;
